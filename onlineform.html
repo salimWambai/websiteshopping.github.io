@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Violet</title>
+    <link rel="stylesheet" type="text/css" href="css\onlineform.css">
+</head>
+
+<body id="onine">
+    <header>
+        <h1>Online Shopping Form</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="onlineform.html">Online Shopping Form</a></li>
+            <li><a href="contactUS.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table id="shopping-form" border="6" style="width: 1250px; text-align: center;">   
+            <caption>Online Shopping Form</caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <h3>Product 1</h3>
+                            <img src="imgs\Nike1.jfif" alt="Product 1">
+                            <h6 class="description">This is the description of the product 1</h6>
+                            <p class="price">$50.00</p>
+                            <button class="add-to-basket" data-product="1" data-property="property1" data-price="50">Add to Basket</button>
+                            <form>
+                                <label for="product-1-size">Size:</label>
+                                <select name="property1" id="product-1-size">
+                                    <option value="property1">12</option>
+                                    <option value="property2">10</option>
+                                    <option value="property3">8.5</option>
+                                </select>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <h3>Product 2</h3>
+                            <img src="imgs\BlueShirt.jfif" alt="Product 2">
+                            <h6 class="description">This is the description of the product 2</h6>
+                            <p class="price">$75.00</p>
+                            <button class="add-to-basket" data-product="2" data-property="property1" data-price="75">Add to Basket</button>
+                            <form>
+                                <label for="product-2-size">Size:</label>
+                                <select name="property2" id="product-2-property">
+                                    <option value="property1">XL</option>
+                                    <option value="property1">L</option>
+                                    <option value="property1">M</option>
+                                </select>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <h3>Product 3</h3>
+                            <img src="imgs\ladyJean.jfif" alt="Product 3">
+                            <h6 class="description">This is the description of the product 3</h6>
+                            <p class="price">$100.00</p>
+                            <button class="add-to-basket" data-product="3" data-property="property1" data-price="100">Add to Basket</button>
+                            <form><label for="product-3-property">Property:</label>
+                                <select name="property3" id="product-3-property">
+                                    <option value="property1">Lady Jeans</option>
+                                    <option value="property2">Lady shirt</option>
+                                    <option value="property3">Lady shirt</option>
+                                </select>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product">
+                            <h3>Product 4</h3>
+                            <img src="imgs\hoodies.jfif" alt="Product 4">
+                            <h6 class="description">This is the description of the product 4</h6>
+                            <p class="price">$75.00</p>
+                            <button class="add-to-basket" data-product="4" data-property="property1" data-price="75">Add to Basket</button>
+                            <form>
+                                <label for="product-4-property">Property:</label>
+                                <select name="property4" id="product-4-property">
+                                    <option value="property1">Hoodie</option>
+                                    <option value="property2">Hooddie 2</option>
+                                
+                                </select>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product">
+                            <h3>Product 5</h3>
+                            <img src="imgs\eyeGlass.jfif" alt="Product 5">
+                            <h6 class="description">This is the description of the product 5</h6>
+                            <p class="price">$75.00</p>
+                            <button class="add-to-basket" data-product="5" data-property="property1" data-price="75">Add to Basket</button>
+                            <form >
+                                <label for="product-5-property">Size:</label>
+                                <select name="property5" id="product-5-property">
+                                    <option value="property1">Men Glass</option>
+                                    <option value="property3">Women Glass</option>
+                                    <option value="property2">Kids Glass</option>
+                                    </select>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="payment-row">
+                        <div class="payment-form">
+                            <hr>
+                            <h4>Choose your payment method</h4>
+                            <form>
+                                <div class="payment-method">
+                                    <label>
+                                        <input type="radio" name="method" value="Visa">VISA
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="method" value="Mastercard">MASTERCARD
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Name on the Card:
+                                        <input type="text" name="cardName" pattern="[A-Za-z]{3,15}" required maxlength="15" id="cardName">
+                                        </label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Exprie Date:
+                                        <div class="date-selector">
+                                            <select name="month" required>
+                                                <option value="" disabled selected>MM</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <select name="year" required>
+                                                <option value="" disabled selected>YY</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV: <input type="text" name="CVV" pattern="[0-9]{3}"  required maxlength="3">
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="checkout" id="checkout-button">
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="empty basket" id="empty-button">
+                                </div>
+                            </form>
+                        </div>
+                    </td>
+                    <td id="tablePrice">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Property</th>
+                                    <th>Unit Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Basket items will be added here -->
+                            </tbody>
+                        </table>
+                        <p id="total-cost">Total Cost: $0</p>
+                        <p id="delivery-cost">Delivery Cost: $0</p>
+                        <p id="grand-total">Grand Total: $0</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <br>
+    <footer>
+        <p>Copyright © 2023 Online Shopping Website    <br>      Salim Wambai</p>
+        
+    </footer>
+    <script src="./JS/onlineform.js"></script>
+</body>
+
+</html>

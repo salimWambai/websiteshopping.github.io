@@ -1,0 +1,308 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: plum;
+  color: #fff;
+}
+header h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+nav {
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  padding: 11px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 11px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  transition: background-color 0.5s ease;
+}
+nav a:hover {
+  background-color: #e286d6;
+  color: #333;
+}
+#shopping-form {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+#shopping-form caption {
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+#shopping-form td {
+  width: 35%;
+  padding: 30px;
+}
+.product {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(213, 51, 208, 0);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.5s ease;
+}
+.product:hover {
+  transform: scale(1.02);
+  background-color: rgba(233, 159, 159, 0.692);
+}
+.product img {
+  width: 75%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #e286d6;
+}
+.product h3 {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.product h6 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.product p {
+  font-size: 1.5em;
+  font-weight: 600;
+  color:black;
+  margin-bottom: 20px;
+}
+.product button {
+  background-color: #6cdbea;
+  color: #fff;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 40px
+}
+
+.product button:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.product form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.product label {
+  font-size: 1em;
+  font-weight: 400;
+  margin-right: 10px;
+  display: block;
+}
+
+.product select {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: #f7f7f7;
+  font-size: 1em;
+  font-weight: 400;
+  width: 100%;
+}
+
+
+.payment-form {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.payment-form h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-form hr {
+  border: none;
+  border-top: 9px solid grey;
+  width: 100%;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.payment-method label {
+  font-size: 1.2em;
+  text-align: end;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1.2em;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.form-group input[type="submit"] {
+  background-color: #287bb7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.date-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-selector select {
+  width: calc(50% - 5px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#tablePrice {
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+#tablePrice h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#tablePrice table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tablePrice th,
+#tablePrice td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#tablePrice th {
+  background-color: #f2f2f2;
+ 
+}
+
+#tablePrice #total-cost,
+#tablePrice #delivery-cost,
+#tablePrice #grand-total {
+font-weight: bold;
+margin-top: 20px;
+text-align: right;
+}
+
+main {
+  padding: 1em;
+}
+
+main h2 {
+  margin-top: 0;
+}
+
+main form {
+  text-align: left;
+}
+
+main form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+main form input[type="text"],
+main form input[type="email"],
+main form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+main form input[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+main form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+#info {
+  text-align: left;
+  margin-top: 1em;
+}
+
+#info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#info li {
+  margin-bottom: 0.5em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+
+

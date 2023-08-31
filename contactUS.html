@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<title>Violet</title>
+  <link rel="stylesheet" type="text/css" href="css\onlineform.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="onlineform.html">Online Shopping Form</a></li>
+      <li><a href="contactUS.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main style="text-align: left; position:center;">
+    <dev>
+         
+    <h2>Get in Touch</h2>
+    <p >We would love to hear from you! You can contact us using the form below or by using the following details:</p><br/><br/>
+            </dev>
+            <dev id="info">
+                <ul  >
+                    <li>Email: <a href="mailto:22209227@student.ciu.edu.tr" style="color: black; font-family: 'Times New Roman', Times, serif;">22209227@student.ciu.edu.tr</a></li><br/>
+                   <ol><a href="mailto:22104864@student.ciu.edu.tr" style="color: black; font-family: 'Times New Roman', Times, serif;">22104864@student.ciu.edu.tr</a></ol>
+                    <!--<li>WhatsApp Number: <a href="tell:+234 806 586 5571"> +234 806 586 5571</a></li>
+                    -->
+                   <!-- <br/><li> Phone Number: <a href="https://wa.me/+2348065865571?text=Hello" style="font-family: 'Times New Roman', Times, serif; color: black;">Send message on WhatsApp</a><br/></li>-->
+                    <br/><li >Address: TRNC 94014</li>
+                  </ul>
+             
+            </dev>
+    <table style="text-align: center">
+        
+        <tr>
+            <th>
+              <form id="contact-form" method="post" action="submit-form.php">
+        </th</tr>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+        
+        <input type="submit" value="Submit">
+    </form> 
+    </table>
+    <table style="text-align: right;">
+       
+  </main>
+  
+ <br/>
+ 
+ <footer>
+  <p>Copyright © 2023 Online Shopping Website    <br>      Salim Wambai</p>
+  
+</footer>
+  <script src="JS\onlineform.js"> /*
+    // Add event listener for form submission
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      // Get form elements
+      const name = document.getElementById("name");
+      const surname = document.getElementById("surname");
+      const comments = document.getElementById("comments");
+
+      // Validate form elements
+      if (name.value === "" || surname.value === "") {
+        window.alert("Name and surname are required fields");
+        event.preventDefault();
+      } else {
+        // Submit form if all elements are valid
+        document.getElementById("contact-form").submit();
+      }
+    });*/
+        </script>
+</body>
+</html>
